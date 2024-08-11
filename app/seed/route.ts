@@ -107,9 +107,9 @@ export async function GET() {
       'Uncomment this file and remove this line. You can delete this file when you are finished.',
   });
   // try {
-  //   await client.sql`BEGIN`;
-  //   await seedUsers();
-  //   await seedCustomers();
+    await client.sql`BEGIN`;
+    await seedUsers();
+    // await seedCustomers();
   //   await seedInvoices();
   //   await seedRevenue();
   //   await client.sql`COMMIT`;
